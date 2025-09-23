@@ -1,0 +1,241 @@
+& .about-header {
+
+    padding-block: 3rem;
+
+    margin-block: 15rem 5rem;
+
+    & .about-heading {
+        text-align: Center;
+        color: var(--main-color);
+        text-shadow: 0 0 5px var(--primary-color);
+        font-size: 5.5rem;
+        position: relative;
+        line-height: 1;
+
+        &.heading-1 {
+            font-size: 15rem;
+        }
+    }
+
+}
+
+
+
+main {
+    position: relative;
+}
+
+section {
+    padding: 10rem;
+    position: relative;
+
+    &#section-about_hero {
+        & .about_hero-container {
+            display: flex;
+            justify-content: center;
+
+            &>div {
+                width: fit-content;
+            }
+
+            & .about_hero-image {
+
+                & img {
+                    border-radius: 0.5rem;
+                    width: 100%;
+                    /* height: 20%; */
+                    aspect-ratio: 4/3;
+                    /* border-radius: 0% 48% 100% 0% / 100% 100% 100% 100%; */
+
+                }
+            }
+
+            & .about_hero-content {
+                padding: 5rem;
+                position: relative;
+                /* width: 100rem; */
+
+                & .history-content::before {
+                    content: "CodeX-Lab";
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: var(--info-color);
+                    opacity: 0.6;
+                    position: relative;
+                    left: -1rem;
+                }
+
+                & .history-content {
+                    padding: 1rem;
+
+
+                    & .institute-profile-links {
+
+                        & .social-links-container {
+                            display: flex;
+                            gap: 2rem;
+                            justify-content: end;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &#section-methodology {
+        /* background-color: transparent; */
+
+        & .methodology-container {
+            padding-block: 5rem;
+            background-color: var(--pri-bg--color);
+
+            & .methodology-item-container {
+                max-width: 142rem;
+                margin: auto;
+                padding-block: 5rem;
+
+                & .item-container {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &#section-achievements {
+        background-color: var(--pri-bg--color);
+
+        & .container {
+            & .achievements-container {
+
+                & .achievements-item-container {
+                    padding-block: 7.5rem;
+                    display: grid;
+                    grid-template-columns: repeat(4, auto);
+
+                    & .item-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:not(:last-child) {
+                            border-right: 2px solid black;
+                        }
+
+                        & span.record {
+                            padding-top: 2rem;
+                        }
+
+                        &:not(:first-child) {
+                            & .record::after {
+                                content: '+';
+                                width: 2px;
+                                height: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &#section-team {
+        display: none;
+    }
+
+    &#section-journey {
+        & .journey-container {
+            & .journey-item-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-block: 0;
+                padding-block: 5rem;
+
+                & .step {
+                    width: 20rem;
+                    height: 15rem;
+                    position: relative;
+                    border: 2px solid black;
+
+                    & h3 {
+                        font-size: 2rem;
+                    }
+
+                    & h3::before {
+                        content: "Level ";
+                        position: absolute;
+                        top: -2rem;
+                        left: 0%;
+                        /* transform: translateX(-50%); */
+                    }
+
+                    & p {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &#section-company {
+        padding-block: 5rem;
+
+        & .container {
+            & .company-container {
+                display: flex;
+                flex-direction: column;
+                margin-block: 0;
+                /* gap: 2rem; */
+
+
+                & .company-item-container {
+                    margin-block: 5rem;
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-rows: repeat(auto, 1fr);
+                    gap: 3rem;
+                    column-rule: 2px solid black;
+
+                    & .company-logo {
+                        height: 10rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid transparent;
+                        border-radius: 10px;
+                        padding: 1rem;
+                        background-color: var(--img-bg--color);
+                        transition: all 0.2s ease-in;
+
+
+                        &:hover {
+                            /* border: 1px solid var(--shadow-color); */
+                            /* border: 5px solid var(--septenary-color); */
+                            background-color: var(--septenary-color);
+                            box-shadow: 0 0 0px 5px var(--septenary-color), rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                        }
+
+
+                        &:hover {
+                            transform: scale(1.05);
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+                    }
+                }
+
+                & p:last-child {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+footer#footer {
+    padding-top: 5rem;
+}

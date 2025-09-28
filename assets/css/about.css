@@ -76,6 +76,25 @@ section {
                             gap: 2rem;
                             justify-content: end;
                             cursor: pointer;
+
+                            & img{
+                                border-radius: 20%;
+                                transition: all 0.3 ease-in;
+                                }
+                            }
+
+                            & .instagram:hover{
+                                content: url(/assets/logos/social/instagram.png);
+                            }
+                            & .facebook:hover{
+                                content: url(/assets/logos/social/facebook.png);
+                            }
+                            & .linkedin:hover{
+                                content: url(/assets/logos/social/linkedin.png);
+                            }
+                            & .twitter:hover{
+                                content: url(/assets/logos/social/twitter.png);
+                            }
                         }
                     }
                 }

@@ -80,7 +80,7 @@ section {
                             & img{
                                 border-radius: 20%;
                                 transition: all 0.3 ease-in;
-                                }
+                                
                             }
 
                             & .instagram:hover{

@@ -80,7 +80,10 @@ section {
                             & img{
                                 border-radius: 20%;
                                 transition: all 0.3 ease-in;
-                                
+                                filter: contrast(10%);
+                                &:hover{
+                                    filter: contrast(100%);
+                                }
                             }
 
                             & .instagram:hover{
@@ -102,6 +105,53 @@ section {
         }
     }
 
+
+    &#section-faculty{
+        & .faculty-container{
+            & .faculty-card-container{
+                display: flex;
+                flex-wrap: wrap;
+                /* display: grid; */
+                /* grid-template-columns: repeat(3,1fr); */
+                align-items: center;
+                justify-items: center;
+                gap: 5rem;
+
+                & .person-card{
+                    display: flex;
+                    align-items: center;
+                    width: 50rem;
+                    padding: 2rem;
+                    gap: 1rem;
+                    /* box-shadow: 0 0 2px black; */
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                    border-radius: 1rem;
+                    & .person-image{
+                        width: 15rem;
+                        /* background-clip: hidden; */
+                        overflow: hidden;
+                        border-radius: 50%;
+                        aspect-ratio: 1/1;
+                    }
+
+                    & .person-info{
+                        border-left: 2px solid grey;
+                        padding-left: 1rem;
+                        & h3{
+                            font-size: 2rem;
+                        }
+                        & p{
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    & .background{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
 
     &#section-methodology {

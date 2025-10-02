@@ -108,30 +108,26 @@ section {
 
     &#section-faculty{
         & .faculty-container{
+            
             & .faculty-card-container{
-                display: flex;
-                flex-wrap: wrap;
-                /* display: grid; */
-                /* grid-template-columns: repeat(3,1fr); */
-                align-items: center;
-                justify-items: center;
+                padding-block: 5rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
                 gap: 5rem;
 
                 & .person-card{
                     display: flex;
                     align-items: center;
-                    width: 50rem;
                     padding: 2rem;
                     gap: 1rem;
-                    /* box-shadow: 0 0 2px black; */
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                     border-radius: 1rem;
                     & .person-image{
-                        width: 15rem;
-                        /* background-clip: hidden; */
-                        overflow: hidden;
-                        border-radius: 50%;
-                        aspect-ratio: 1/1;
+                        & img{
+                            width: 15rem;
+                            border-radius: 50%;
+                            aspect-ratio: 1;
+                        }
                     }
 
                     & .person-info{
@@ -155,20 +151,11 @@ section {
 
 
     &#section-methodology {
-        /* background-color: transparent; */
 
-        & .methodology-container {
-            padding-block: 5rem;
-            background-color: var(--pri-bg--color);
+        & .methodology-container{
 
-            & .methodology-item-container {
-                max-width: 142rem;
-                margin: auto;
-                padding-block: 5rem;
-
-                & .item-container {
-                    margin-top: 0;
-                }
+            & .methodology-item-container{
+                padding-block: 7.5rem;
             }
         }
     }

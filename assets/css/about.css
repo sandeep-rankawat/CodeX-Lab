@@ -169,25 +169,25 @@ section {
 
 
                 & .method-card{
+                    width: 40rem;
                     box-shadow: 0 0 2px grey    ;
                     padding: 5rem 2rem;
                     border-radius: 1rem;
+                    display: flex;
+                    /* justify-content: center; */
+                    align-items: center;
+                    flex-direction: column;
                 }
                 & .expanded-content{
                     display: none;
                 }
 
                 & .icon{
-                    width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
-            font-size: 5rem;
-            transition: all 0.3s ease;
+                    padding: 0px;
+                    width: 30rem;
+                   & img{
+                    display: block;
+                   }
                 }
             }
         }

@@ -107,6 +107,8 @@ section {
 
 
     &#section-faculty{
+            background: linear-gradient(0deg, rgba(16, 174, 239, 0.05), transparent);
+            background-color: var(--pri2-bg--color);
         & .faculty-container{
             
             & .faculty-card-container{
@@ -122,6 +124,8 @@ section {
                     gap: 1rem;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                     border-radius: 1rem;
+                    background: rgba(255, 255, 255, 0.9);
+
                     & .person-image{
                         & img{
                             width: 15rem;
@@ -170,7 +174,7 @@ section {
 
                 & .method-card{
                     width: 40rem;
-                    box-shadow: 0 0 2px grey    ;
+                    /* box-shadow: 0 0 2px grey    ; */
                     padding: 5rem 2rem;
                     border-radius: 1rem;
                     display: flex;
@@ -182,19 +186,17 @@ section {
                     display: none;
                 }
 
-                & .icon{
-                    padding: 0px;
-                    width: 30rem;
+               
                    & img{
-                    display: block;
+                    margin-block: 2rem;
                    }
-                }
+                
             }
         }
     }
 
     &#section-achievements {
-        background-color: var(--pri-bg--color);
+        background-color: var(--pri2-bg--color);
 
         & .container {
             & .achievements-container {
@@ -236,6 +238,8 @@ section {
     }
 
     &#section-journey {
+                background-color: var(--pri2-bg--color);
+
         & .journey-container {
             & .journey-item-container {
                 display: flex;
@@ -272,6 +276,8 @@ section {
 
     &#section-company {
         padding-block: 5rem;
+                /* background-color: var(--pri2-bg--color); */
+
 
         & .container {
             & .company-container {

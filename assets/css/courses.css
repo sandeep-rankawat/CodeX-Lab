@@ -2,12 +2,14 @@
 
 .courses-header {
 
-    & .heading-2 {
-        text-align: center;
-        margin: 0rem;
+    & h2.heading-2{
+        width: fit-content;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
     }
 
-    & .para {
+    & .subheading {
         text-align: center;
     }
     

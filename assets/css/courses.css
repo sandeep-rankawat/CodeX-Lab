@@ -49,16 +49,14 @@
         gap: 5rem;
         row-gap: 20rem;
         grid-template-columns: repeat(3, minmax(30rem, 40rem));
-        grid-template-rows: repeat(3, minmax(40rem, 50rem));
+        /* grid-template-rows: repeat(3, minmax(40rem, 50rem)); */
         grid-auto-rows: minmax(40rem, 50rem);
 
         & .card {
             position: relative;
-            min-height: 55rem;
             background-color: var(--pri-bg--color);
             list-style: inside;
             border-radius: 10px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px 1px;
 
             & .card-header img {
@@ -82,6 +80,7 @@
                 }
 
                 & p {
+                    display: none;
                     font-size: 1.5rem;
                     color: var(--pri-text--color);
                     margin-bottom: 1rem;
@@ -96,6 +95,8 @@
             }
 
             & .card-footer {
+                position: absolute;
+                bottom: 1.5rem;
                 font-family: Arial, Helvetica, sans-serif;
                 display: flex;
                 flex-direction: column;
@@ -109,8 +110,6 @@
                 /* position: relative; */
 
                 & .price {
-                    position: absolute;
-                    bottom: 6rem;
                     left: 3rem;
                     align-self: flex-start;
                     font-weight: 700;
@@ -123,10 +122,7 @@
                 }
 
                 & .btn {
-                    position: absolute;
-                    bottom: 1.5rem;
-                    width: 90%;
-                    margin: auto;
+                    display: inline-block;
                     padding: 0.5rem 1rem;
                     padding-bottom: 1rem;
                     background-color: var(--sec-bg--color);

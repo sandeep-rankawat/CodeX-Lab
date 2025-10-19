@@ -2,7 +2,7 @@
 
 .courses-header {
 
-    & h2.heading-2{
+    & h2.heading-2 {
         width: fit-content;
         margin: auto;
         margin-top: 10rem;
@@ -12,12 +12,13 @@
     & .subheading {
         text-align: center;
     }
-    
-    & .features{
+
+    & .features {
         font-family: "Poppins", sans-serif;
         font-size: 2.2rem;
         font-weight: bold;
-        & li{
+
+        & li {
             list-style: inside disc;
             padding-left: 1rem;
             line-height: 2rem;
@@ -31,87 +32,68 @@
 
 
 .courses-container {
-    /* width: auto!important; */
     width: 80vw;
     margin: auto;
 }
 
 .card-section {
     margin-block: 1rem;
-    /* width: auto!important; */
     display: flex;
     justify-content: center;
     padding-block: 5rem;
-    /* background-color: var(--sec-bg--color); */
 
     & .card-container {
         display: grid;
         gap: 5rem;
-        row-gap: 20rem;
         grid-template-columns: repeat(3, minmax(30rem, 40rem));
-        /* grid-template-rows: repeat(3, minmax(40rem, 50rem)); */
-        grid-auto-rows: minmax(40rem, 50rem);
 
         & .card {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             background-color: var(--pri-bg--color);
             list-style: inside;
             border-radius: 10px;
+            height: auto;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px 1px;
 
-            & .card-header img {
-                width: 100%;
-                aspect-ratio: 16/9;
-                border-radius: 10px 10px 0 0;
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
-            }
+            & .card-header {
+                & img {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    border-radius: 10px 10px 0 0;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
+                }
 
-            & .card-main {
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 2rem;
-                /* gap: 1rem; */
-                font-size: 1.75rem;
+                & .content{
+                    padding: 1.75rem;
+                    line-height: 1;
+                }
 
                 & h3 {
-                    /* font-variant: small-caps; */
+                    font-size: 2.5rem;
                     text-transform: capitalize;
-                    margin-bottom: 0.5rem;
                     letter-spacing: 1px;
                 }
 
                 & p {
                     display: none;
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
                     color: var(--pri-text--color);
                     margin-bottom: 1rem;
-                }
-
-                & span {
-                    display: block;
-                    font-weight: 500;
-                    font-size: 1.5rem;
-                    font-family: "Fira Code", monospace;
                 }
             }
 
             & .card-footer {
-                position: absolute;
-                bottom: 1.5rem;
-                font-family: Arial, Helvetica, sans-serif;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                justify-content: space-between;
-                align-items: center;
                 padding: 1rem 2rem;
                 background-color: var(--pri-bg--color);
                 border-radius: 0 0 10px 10px;
                 font-size: 2rem;
-                /* position: relative; */
+                display: flex;
+                justify-content: space-between;
 
                 & .price {
-                    left: 3rem;
-                    align-self: flex-start;
+                    margin-bottom: 1rem;
                     font-weight: 700;
                     color: var(--pri-text--color);
 
@@ -123,15 +105,15 @@
 
                 & .btn {
                     display: inline-block;
+                    width: 100px;
                     padding: 0.5rem 1rem;
                     padding-bottom: 1rem;
-                    background-color: var(--sec-bg--color);
-                    color: var(--ter-text--color);
                     border-radius: 5px;
+                    border: 2px solid var(--sec-bg--color);
 
                     &:hover {
-                        text-decoration: underline;
-                        text-underline-offset: 0.5rem;
+                        background-color: var(--sec-bg--color);
+                        color: var(--ter-text--color);
                     }
                 }
             }
@@ -140,6 +122,6 @@
     }
 }
 
-footer#footer{
+footer#footer {
     padding-top: 5rem;
 }
